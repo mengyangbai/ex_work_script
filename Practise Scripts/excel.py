@@ -1,0 +1,21 @@
+import xlsxwriter
+
+file = xlsxwriter.Workbook('test.xlsx')
+table = file.add_worksheet('报告')
+table.write(0,0,'从时间1到时间2的报告')
+table.write(1,0,'箱号')
+table.write(1,1,'货物信息')
+table.write(1,2,'品名')
+table.write(1,3,'声称重量')
+table.write(1,4,'实际重量')
+table.write(1,5,'收件人城市')
+table.write(1,6,'发送人城市')
+table.write(1,7,'Package picked up.')
+table.write(1,8,'Package arrived at warehouse.')
+table.write(1,9,'In transit to airport.')
+table.write(1,10,'Departed Facility')
+table.write(1,11,'提交海关')
+table.write(1,12,'清关中')
+table.write(1,13,'最新时间')
+
+file.close()
